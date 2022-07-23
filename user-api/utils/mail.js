@@ -3,18 +3,18 @@ exports.sendMail = async (to="bar@example.com", name="User Name", forRole="user"
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
+    host: "smtpout.secureserver.net",
+    port: 465,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'appointmea@gmail.com', // generated ethereal user
-      pass: 'Dixcy123#', // generated ethereal password
+      user: 'admin@deekshithsn.live ', // generated ethereal user
+      pass: 'Admin@1234', // generated ethereal password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '"Admin" <appointmea@gmail.com>', // sender address
+    from: '"Admin" <admin@deekshithsn.live>', // sender address
     to, // list of receivers
     subject: "Booking Confirmation ✔", // Subject line
     text: "Your booking is confirmed. Somebody from the team contact you soon.", // plain text body

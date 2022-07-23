@@ -24,7 +24,7 @@ const createBooking = asyncHandler(async (req, res) => {
 
     if (booking) {
         await sendMail(email, name, "user")
-        await sendMail("admin@xyz.com", name, "admin")
+        await sendMail("admin@deekshithsn.live", name, "admin")
         res.status(201).json({ booking });
     } else {
         res.status(400)
