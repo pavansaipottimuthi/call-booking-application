@@ -1,4 +1,4 @@
-# User-Backend
+# User-Api
 
 - Version of NodeJs used - `v17.4.0`
 - Port on which the application runs - `1004`
